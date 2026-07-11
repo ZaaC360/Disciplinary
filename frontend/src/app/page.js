@@ -4,73 +4,45 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white text-gray-900">
 
-      {/* Navbar */}
+      {/* Hero */}
 
-      <header className="bg-white sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-8 h-20 flex items-center justify-between">
+      <section className="pt-10 pb-20">
+        <div className="max-w-5xl mx-auto flex flex-col items-center justify-center text-center">
 
-          <h1 className="text-3xl ">
-            Disciplinary
-          </h1>
+          <div className="flex flex-col items-center justify-center text-center">
 
-          <div className="flex items-center gap-4">
+            <h1 className="text-6xl font-family: 'Poppins', sans-serif">
+              Organize Tasks.
+              <br />
+              Track Discipline.
+              <br />
+              Improve Productivity.
+            </h1>
 
-            <Link href="/login">
-              <button className="px-5 py-2 rounded-lg border border-gray-300 hover:bg-gray-100 transition">
-                Login
+            <p className="mt-8 text-lg text-gray-600 leading-8 max-w-2xl">
+              Disciplinary helps educational institutes and teams manage
+              assignments, monitor disciplinary records, and keep everyone
+              accountable from one centralized platform.
+            </p>
+
+            <div className="mt-10 flex gap-4">
+
+              <Link href="/register">
+                <button className="bg-blue-600 hover:bg-blue-700 px-7 py-4 rounded-xl text-white font-semibold transition">
+                  Get Started
+                </button>
+              </Link>
+
+              <button className="border px-7 py-4 rounded-xl hover:bg-gray-100 transition">
+                Learn More
               </button>
-            </Link>
 
-            <Link href="/register">
-              <button className="px-5 py-2 rounded-lg bg-blue-600 hover:bg-blue-700 text-white transition">
-                Register
-              </button>
-            </Link>
+            </div>
 
           </div>
 
         </div>
-      </header>
-
-      {/* Hero */}
-
-      <section className="pt-10 pb-20">
-  <div className="max-w-5xl mx-auto flex flex-col items-center justify-center text-center">
-
-    <div className="flex flex-col items-center justify-center text-center">
-
-      <h1 className="text-6xl font-family: 'Poppins', sans-serif">
-        Organize Tasks.
-        <br />
-        Track Discipline.
-        <br />
-        Improve Productivity.
-      </h1>
-
-      <p className="mt-8 text-lg text-gray-600 leading-8 max-w-2xl">
-        Disciplinary helps educational institutes and teams manage
-        assignments, monitor disciplinary records, and keep everyone
-        accountable from one centralized platform.
-      </p>
-
-      <div className="mt-10 flex gap-4">
-
-        <Link href="/register">
-          <button className="bg-blue-600 hover:bg-blue-700 px-7 py-4 rounded-xl text-white font-semibold transition">
-            Get Started
-          </button>
-        </Link>
-
-        <button className="border px-7 py-4 rounded-xl hover:bg-gray-100 transition">
-          Learn More
-        </button>
-
-      </div>
-
-    </div>
-
-  </div>
-</section>
+      </section>
 
       {/* Features */}
 

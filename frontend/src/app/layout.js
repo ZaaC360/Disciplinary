@@ -1,6 +1,6 @@
 import "./globals.css";
 import { Poppins } from "next/font/google";
-import "./globals.css";
+import Navbar from "@/components/Navbar";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -15,7 +15,10 @@ export default function RootLayout({ children }) {
       lang="en"
       className={poppins.className}
     >
-      <body className="min-h-full flex flex-col"><AuthProvider>{children}</AuthProvider></body>
+      <body className="min-h-full flex flex-col"><AuthProvider>
+        <Navbar />
+        {children}
+      </AuthProvider></body>
     </html>
   );
 }
