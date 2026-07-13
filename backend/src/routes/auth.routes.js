@@ -7,13 +7,13 @@ const app = express()
 
 app.use(cors({
   origin: "http://localhost:3000",
-  credentials: true, 
+  credentials: true,
 }))
 
 router.post("/register", authController.registerUser)
- 
+
 router.post("/login", authController.loginUser)
 
 router.get("/me", authMiddleware, authController.getMe)
 
-module.exports = router 
+module.exports = router
